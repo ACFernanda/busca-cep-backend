@@ -8,7 +8,7 @@ export function cepValidator(req: Request, res: Response, next) {
   if (validation.error) {
     throw {
       type: "unprocessable_entity",
-      message: validation.error.details.map((detail) => detail.message),
+      message: `Dado inválido: ${validation.error.details.map((detail) => detail.message)}`,
     };
   }
 
