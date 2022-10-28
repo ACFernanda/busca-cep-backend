@@ -10,7 +10,7 @@ describe("search CEP", () => {
 
   it("should fail invalid CEP address - not found", async () => {
     const cep = "12345678"
-    const data = await cepService.getAddress(cep);
+    const data = cepService.getAddress(cep);
 
     expect(data).rejects.toEqual({
       type: "not_found",
