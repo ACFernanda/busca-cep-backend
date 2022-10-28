@@ -12,6 +12,6 @@ export async function getAddress(cep: string) {
   if (data.status === 404) {
     throw { type: "not_found", message: data.message };
   }
-    
+  
   return data;
 }
