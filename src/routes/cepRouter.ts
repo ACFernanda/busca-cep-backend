@@ -4,6 +4,6 @@ import { getAddress } from "./../controllers/cepController.js";
 
 const cepRouter = Router();
 
-cepRouter.get("/address", cepValidator, getAddress);
+cepRouter.post("/address", cepValidator, getAddress);
 
 export default cepRouter;
