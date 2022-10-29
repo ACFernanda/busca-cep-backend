@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/app.ts",
+    "build": "tsc",
+	  "start": "node dist/app.js",
     "dev:test": "dotenv -e .env.test nodemon src/app.ts",
     "test": "NODE_OPTIONS=--experimental-vm-modules -- -i --coverage",
     "test:unit": "NODE_OPTIONS=--experimental-vm-modules jest cepService.test --coverage"
