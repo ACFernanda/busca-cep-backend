@@ -6,8 +6,7 @@
   "scripts": {
     "build": "tsc",
 	  "start": "node dist/app.js",
-    "dev:test": "dotenv -e .env.test nodemon src/app.ts",
-    "test": "NODE_OPTIONS=--experimental-vm-modules -- -i --coverage",
+    "dev": "ts-node src/app.ts",
     "test:unit": "NODE_OPTIONS=--experimental-vm-modules jest cepService.test --coverage"
  
   },
